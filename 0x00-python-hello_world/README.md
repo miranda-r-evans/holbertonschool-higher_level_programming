@@ -21,3 +21,7 @@
 10-check_cycle.c - a function in C that checks if a singly linked list has a cycle in it
 
 100-write.py - a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19
+
+101-compile - a shell script that compiles a .py file into a .pyc file
+
+102-magic_calculation - a function reverse engineered from bytecode
