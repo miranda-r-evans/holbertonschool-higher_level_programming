@@ -25,3 +25,9 @@
 12-fizzbuzz.py - a function that prints the numbers from 1 to 100 separated by a space, except "Fizz" for multiples of 3 and "Buzz" for multiples of 5
 
 13-insert_number.c - a function in C that inserts a number into a sorted singly linked list
+
+100-print_tebahpla.py - a program that prints the alphabet, in reverse order, alternating lowercase and uppercase
+
+101-remove_char_at.py - a function that creates a copy of the string, removing the character at the position n
+
+102-magic_calculation.py - reverse engineering from bytecode
