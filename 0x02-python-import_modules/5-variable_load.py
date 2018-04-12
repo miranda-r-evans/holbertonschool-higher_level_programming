@@ -3,4 +3,8 @@
 import variable_load_5
 
 
-print(variable_load_5.a)
+def main():
+    pass
+
+if __name__=='__main__':
+    print(variable_load_5.a)
