@@ -6,7 +6,7 @@ import sys
 def main():
     pass
 
-if __name__=='__main__':
+if __name__ == '__main__':
     sum = 0
     bool = 0
     for ar in argv:

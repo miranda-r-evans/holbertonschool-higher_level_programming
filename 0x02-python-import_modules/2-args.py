@@ -6,7 +6,7 @@ import sys
 def main():
     pass
 
-if __name__=='__main__':
+if __name__ == '__main__':
     print("{:d} arguments:".format(len(sys.argv) - 1))
     i = 0
     for ar in sys.argv:
