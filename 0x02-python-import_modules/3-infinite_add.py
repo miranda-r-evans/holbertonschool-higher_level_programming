@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 
-from sys import argv
-
-
-def main():
-    pass
-
 if __name__ == '__main__':
+    from sys import argv
     sum = 0
     bool = 0
     for ar in argv:
