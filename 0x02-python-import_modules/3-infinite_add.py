@@ -5,7 +5,7 @@ import sys
 
 sum = 0
 bool = 0
-for ar in sys.argv:
+for ar in argv:
     if bool == 1:
         sum = sum + int(ar)
     bool = 1
