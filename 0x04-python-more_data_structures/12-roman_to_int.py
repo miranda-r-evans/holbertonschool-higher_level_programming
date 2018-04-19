@@ -2,7 +2,7 @@
 
 
 def roman_to_int(roman_string):
-    if roman_string is None:
+    if roman_string is None or isinstance(roman_string, str) is not True:
         return 0
     sum = 0
     biggest_val = 1
