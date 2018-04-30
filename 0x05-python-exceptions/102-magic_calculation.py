@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import dis
 
 def magic_calculation(a, b):
     result = 0
@@ -13,5 +12,3 @@ def magic_calculation(a, b):
         except:
             result = a + b
             break
-
-print(dis.dis(magic_calculation))
