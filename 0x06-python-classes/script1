@@ -1,3 +1,0 @@
-#!/bin/bash
-cp 103-magic_class.py goodfilename.py
-echo "import dis;import goodfilename;dis.dis(goodfilename.MagicClass);exit()" | python3
