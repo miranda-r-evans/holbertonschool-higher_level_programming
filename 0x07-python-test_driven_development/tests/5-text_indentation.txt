@@ -1,0 +1,26 @@
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+>>> text_indentation('    spaces on first line   .   spaces on second   ')
+spaces on first line   .
+<BLANKLINE>
+spaces on second
+
+>>> text_indentation('''period. \
+    question mark? \
+    colon:''')
+period.
+<BLANKLINE>
+question mark?
+<BLANKLINE>
+colon:
+
+>>> text_indentation('	tabs.	tabs')
+    tabs
+<BLANKLINE>
+    tabs
+<BLANKLINE>
+
+>>> text_indentation(['not a string'])
+Traceback (most recent call last):
+...
+TypeError: text must be a string
