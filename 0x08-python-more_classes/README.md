@@ -1,0 +1,1 @@
+This directory starts with an empty rectangle class and adds attributes with each subsequent file
