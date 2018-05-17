@@ -19,7 +19,8 @@ def main():
             if l_count == 10:
                 l_count = 0
                 print('File size: {}'.format(f_size))
-                for key in status:
+                for key in ['200', '301', '400', '401', '403', '404',
+                            '405', '500']:
                     if status[key] != 0:
                         print('{}: {}'.format(key, status[key]))
     except KeyboardInterrupt:
@@ -28,7 +29,7 @@ def main():
         return
 
     print('File size: {}'.format(f_size))
-    for key in status:
+    for key in ['200', '301', '400', '401', '403', '404', '405', '500']:
         if status[key] != 0:
             print('{}: {}'.format(key, status[key]))
 
