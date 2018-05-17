@@ -13,8 +13,12 @@ def main():
     try:
         for line in sys.stdin:
             input_list = line.split()
+            if len(input_list) < 2:
+                continue
             l_count += 1
             f_size += int(input_list[-1])
+            if input_list[-2] not in status:
+                continue
             status[input_list[-2]] += 1
             if l_count == 10:
                 l_count = 0
