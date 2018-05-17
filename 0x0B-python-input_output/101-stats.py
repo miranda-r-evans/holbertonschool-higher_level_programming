@@ -23,11 +23,13 @@ def main():
                     if status[key] != 0:
                         print('{}: {}'.format(key, status[key]))
     except KeyboardInterrupt:
-        print('File size: {}'.format(f_size))
-        for key in status:
-            if status[key] != 0:
-                print('{}: {}'.format(key, status[key]))
+        pass
     except:
         return
+
+    print('File size: {}'.format(f_size))
+    for key in status:
+        if status[key] != 0:
+            print('{}: {}'.format(key, status[key]))
 
 main()
