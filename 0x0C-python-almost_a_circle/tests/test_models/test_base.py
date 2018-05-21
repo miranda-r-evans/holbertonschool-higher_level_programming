@@ -18,7 +18,6 @@ class Test_Base(unittest.TestCase):
         b = Base(57)
         self.assertEqual(b.id, 57)
 
-
     def test_id_mutable(self):
         ''' method testing for bad id values '''
         with self.assertRaises(TypeError):
