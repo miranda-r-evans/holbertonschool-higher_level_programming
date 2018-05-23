@@ -56,7 +56,7 @@ class Rectangle(Base):
         ''' x setter '''
         Rectangle.is_int('x', value)
         if value < 0:
-            raise ValueError('width must be >= 0')
+            raise ValueError('x must be >= 0')
         self.__x = value
 
     @property
@@ -69,7 +69,7 @@ class Rectangle(Base):
         ''' y getter '''
         Rectangle.is_int('y', value)
         if value < 0:
-            raise ValueError('width must be >= 0')
+            raise ValueError('y must be >= 0')
         self.__y = value
 
     @staticmethod
