@@ -49,8 +49,10 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        ''' creates a shape instance from a dict '''
-        pass
+        ''' method to create a rectangle from a dict '''
+        my_inst = cls(1, 1)
+        my_inst.update(**dictionary)
+        return my_inst
 
     @classmethod
     def load_from_file(cls):
