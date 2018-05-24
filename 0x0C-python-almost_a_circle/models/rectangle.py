@@ -116,3 +116,10 @@ class Rectangle(Base):
         ''' dict version of a rectangle '''
         return {'id': self.id, 'width': self.width, 'height': self.height,
                 'x': self.x, 'y': self.y}
+
+    @classmethod
+    def create(cls, **dictionary):
+        ''' method to create a rectangle from a dict '''
+        my_inst = cls(1, 1)
+        my_inst.update(**dictionary)
+        return my_inst

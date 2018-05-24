@@ -23,5 +23,40 @@ class Test_Base(unittest.TestCase):
         with self.assertRaises(TypeError):
             c = Base([1, 2, 3])
 
+
+class Test_JSON(unittest.TestCase):
+    ''' class for testing Base JSON methods'''
+
+    def test_to_json_None(self):
+        ''' method testing to_json input None '''
+        a = Base.to_json_string(None)
+        self.assertEqual(a, '[]')
+
+    def test_to_json_empty(self):
+        ''' method testing to_json input empty string '''
+        b = Base.to_json_string([])
+        self.assertEqual(b, '[]')
+
+    def test_to_json_list_dict(self):
+        ''' method testing to_json input valid dictionary '''
+        c = Base.to_json_string([{'id': 12}])
+        self.assertEqual(c, '[{"id": 12}]')
+
+    def test_from_json_None(self):
+        ''' method testing from_json input None '''
+        d = Base.from_json_string(None)
+        self.assertEqual(d, [])
+
+    def test_from_json_empty(self):
+        ''' method testing from_json input [] '''
+        e = Base.from_json_string('[]')
+        self.assertEqual(e, [])
+
+    def test_from_json_list_dict(self):
+        ''' method testing from_json input valid dictionary '''
+        f = Base.from_json_string('[{ "id": 89 }]')
+        self.assertEqual(f, [{'id': 89}])
+
+
 if __name__ == '__main__':
     unittest.main()

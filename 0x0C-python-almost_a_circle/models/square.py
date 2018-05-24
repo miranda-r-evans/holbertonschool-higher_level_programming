@@ -9,7 +9,7 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         ''' initializer for square '''
-        super().__init__(size, size, x, y, id)
+        super().__init__(width=size, height=size, x=x, y=y, id=id)
 
     def __str__(self):
         ''' printable version of an instance '''
@@ -54,6 +54,13 @@ class Square(Rectangle):
         del my_dict['width']
         del my_dict['height']
         return my_dict
+
+    @classmethod
+    def create(cls, **dictionary):
+        ''' method to create a rectangle from a dict '''
+        my_inst = cls(1)
+        my_inst.update(**dictionary)
+        return my_inst
 
     @staticmethod
     def to_csv_string(list_dictionaries):
