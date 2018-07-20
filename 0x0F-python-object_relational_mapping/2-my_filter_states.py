@@ -17,8 +17,9 @@ def main():
 
         cursor = db.cursor()
 
-        cursor.execute("SELECT id, name FROM states where name=%s",
-                       (sys.argv[4],))
+        line = "SELECT id, name FROM states where name='{}'".format(sys.argv[4])
+
+        cursor.execute(line)
 
         my_states = cursor.fetchall()
 
