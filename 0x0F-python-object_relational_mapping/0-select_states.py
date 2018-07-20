@@ -7,11 +7,7 @@ import MySQLdb
 import sys
 
 
-def main():
-        """
-        calls db fuctions in order to select and print states
-        """
-
+if __name__ == "__main__":
         db = MySQLdb.connect("localhost", sys.argv[1],
                              sys.argv[2], sys.argv[3])
 
@@ -27,7 +23,3 @@ def main():
         cursor.close()
 
         db.close()
-
-
-if __name__ == "__main__":
-        main()
