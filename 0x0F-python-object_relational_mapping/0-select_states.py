@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
         cursor = db.cursor()
 
-        cursor.execute("SELECT id, name FROM states")
+        cursor.execute("SELECT * FROM states")
 
         my_states = cursor.fetchall()
 
