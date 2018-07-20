@@ -24,6 +24,8 @@ def main():
         for state in my_states:
                 print(state)
 
+        cursor.close()
+
         db.close()
 
 
