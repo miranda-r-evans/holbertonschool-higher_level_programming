@@ -17,9 +17,9 @@ def main():
 
         cursor = db.cursor()
 
-        line = "SELECT id, name FROM states where name='{}'".format(sys.argv[4])
+        line = "SELECT id, name FROM states WHERE BINARY name='{}'"
 
-        cursor.execute(line)
+        cursor.execute(line.format(sys.argv[4]))
 
         my_states = cursor.fetchall()
 
