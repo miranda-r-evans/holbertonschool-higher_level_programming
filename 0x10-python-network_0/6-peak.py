@@ -20,15 +20,17 @@ def find_peak(list_of_integers):
     if list_of_integers[mid] < list_of_integers[mid - 1]:
         return find_peak(list_of_integers[:mid])
 
+    is_end = len(list_of_integers) == 2
+    condition1 = list_of_integers[mid] > list_of_integers[mid - 1]
+    condition2 = (is_end or list_of_integers[mid] > list_of_integers[mid + 1])
+
+    if condition1 and condition2:
+        return list_of_integers[mid]
+
+    if is_end and list_of_integers[mid] < list_of_integers[mid + 1]:
+        return find_peak(list_of_integers[mid + 1:])
+
     try:
-        condition1 = list_of_integers[mid] > list_of_integers[mid - 1]
-        condition2 = list_of_integers[mid] > list_of_integers[mid + 1]
-        if condition1 and condition2:
-            return list_of_integers[mid]
-
-        if list_of_integers[mid] < list_of_integers[mid + 1]:
-            return find_peak(list_of_integers[mid + 1:])
-
         right = find_peak(list_of_integers[mid + 1:])
     except:
         right = None
