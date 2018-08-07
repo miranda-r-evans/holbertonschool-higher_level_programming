@@ -12,4 +12,4 @@ if __name__ == "__main__":
                 print("Body response:")
                 print('\t- type: {}'.format(message.__class__))
                 print('\t- content: {}'.format(message))
-                print('\t- utf8 content: {}'.format(response.msg))
+                print('\t- utf8 content: {}'.format(message.decode('utf-8')))
