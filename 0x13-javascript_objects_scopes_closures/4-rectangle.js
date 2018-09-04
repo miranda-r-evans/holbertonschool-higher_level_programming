@@ -13,11 +13,11 @@ module.exports = class Rectangle {
     process.stdout.write(r);
   }
 
-  rotate() {
+  rotate () {
     [this.width, this.height] = [this.height, this.width];
   }
 
-  double() {
+  double () {
     this.width *= 2;
     this.height *= 2;
   }
