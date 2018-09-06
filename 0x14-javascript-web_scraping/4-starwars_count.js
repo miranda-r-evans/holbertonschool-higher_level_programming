@@ -2,7 +2,7 @@
 
 const request = require('request');
 
-request('http://swapi.co/api/films/.json', function (err, response, body) {
+request(process.argv[2] + '/.json', function (err, response, body) {
   if (err) {
     console.log(err);
     return;
