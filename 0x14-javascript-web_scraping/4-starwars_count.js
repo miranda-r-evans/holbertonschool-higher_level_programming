@@ -12,7 +12,7 @@ request('http://swapi.co/api/films/.json', function (err, response, body) {
   for (let i in resBody) {
     let characters = resBody[i]['characters'];
     for (let j in characters) {
-      if (characters[j] === 'https://swapi.co/api/people/18/.json') {
+      if (characters[j].search('18/') !== -1) {
         total++;
         break;
       }
