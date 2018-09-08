@@ -16,5 +16,12 @@
 
 8-script.js - a Javascript script that fetches and lists all movies title by using this URL: https://swapi.co/api/films/?format=json
 
-9-script.js - a Javascript script that fetches and prints the San Francisco wind speed by using this URL: https://query.yahooapis.com/v1/public/yql?q=select%20wind%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22San%20Francisco%2C%20CA%22)&format=json
+9-script.js - a Javascript script that fetches and prints the San Francisco wind speed by using this URL
 
+100-script.js - a Javascript script that updates the text color of the HTML tag HEADER to red (#FF0000)
+
+101-script.js - a Javascript script that adds, removes and clears LI elements from a list when the user clicks
+
+102-script.js - a Javascript script that fetches and prints the San Francisco wind speed by using this URL
+
+103-script.js - a Javascript script that fetches and prints any city's wind speed by using this URL
